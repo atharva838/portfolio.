@@ -1,4 +1,4 @@
-// DOM Elements
+// DOM Elements// DOM Elements
 const navbar = document.getElementById('navbar');
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.querySelector('.nav-menu');
@@ -526,3 +526,16 @@ function addAccessibilityFeatures() {
         });
     });
 }
+emailjs.init({
+  publicKey: "6AFkzBZ3EOflF2M6f",
+});
+
+window.onload = function() {
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    emailjs.sendForm('service_kj43ng9', 'template_lsxut7h', this)
+      .then(() => { console.log('SUCCESS!'); }, (error) => { console.log('FAILED...', error); });
+  });
+}
+
+
