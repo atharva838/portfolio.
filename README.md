@@ -1,2 +1,2 @@
 # portfolio.github.io
-hey this is my portfolio , please checkout
+Hy I am FUll Stack Web developer using Django Just Checkout Portfolio 
